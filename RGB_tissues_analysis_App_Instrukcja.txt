@@ -1,0 +1,19 @@
+Tytuł: RGB_tissues_anlysis_App
+Autorka: Zofia Bryłowska
+
+Opis:
+1. Wczytanie obrazu: Kliknij przycisk (lewy panel): Wgraj zdjęcie i wybierz plik .jpg lub .png (albo .tiff lub .tif) ze swoich zasobów. Obraz pojawi się w panelach po prawej i lewej stronie, po prawej stronie będzie cały czas widoczny obraz oryginalna natomiast po lewej stronie na obrazie będą wyświetlać się wprowadzone przez Ciebie zmiany.
+2. Na środkowym panelu widoczne są narzędzia służące do analizy obrazu. Suwaki Red, Green, Blue pozwalają ustawić zakres wartości dla każdego kanału. Natomiast widoczne pod nimi spinnery pokazują dokładne wartości minimalne i maksymalne (umożliwiają również ustawianie tych wartości). Zmiana suwaków lub spinnerów natychmiast aktualizuje obraz w prawym panelu. Piksele, których kolory nie mieszczą się w ustawionym zakresie, zostaną zamazane kolorem czarnym.
+3. Jeśli chcesz usunąć tło, zaznacz checkbox „Filtruj tło”  ustaw próg w spinnerze Background.
+4. Przełącznik „Obrysuj kontur” pozwala na obrysowanie konturów obiektów widocznych w przetworzonym obrazie. Kontur zostanie zaznaczony jasnym kolorem na obrazie w panelu przetworzonym.
+5. W celu zresetowania ustawień użyj przycisku: Resetuj. Przywróci to oryginalny obraz po prawej stronie (Uwaga: Filtracja tła nie podlega Resetowi - usuwa się ja ręcznie poprzez odkliknięcie checkbox'a).
+6. Przyciski: Licz obiekty oraz Sumuj pole obiektów po kliknięciu pokazują odpowiednio okno dialogowe z liczbą obiektów znalezionych na analizowanych obrazie i ich sumarycznych polem [px].
+7. W celu zapisania przetworzonego ekranu kliknij przycisk (prawy panel): Zapisz zdjęcie.
+8. Jeśli chcesz wyeksportować swoje wyniki analizy kliknij przycisk Big Data (bardziej szczegółowa analiza oraz stworzenie dwóch histogramów w formacie .png) lub Small Data (mniej szczegółowa analiza - w tym wypadku można zapisać kilka analiz jednego obraz do jednego pliku nie nadpisując poprzednich analiz).
+
+Dodatek:
+1. Aplikacja umożliwia zapisanie aktualnych ustawień filtrów RGB jako tzw. maski. W tym celu kliknij przycisk „Zapisz maskę”, a następnie podaj nazwę maski.
+Zapisane maski są dostępne na liście rozwijanej i przechowywane w pliku masks.mat, dzięki czemu pozostają dostępne po ponownym uruchomieniu aplikacji.
+2. Aby użyć zapisanej maski: wybierz odpowiednią maskę z listy rozwijanej i zaznacz checkbox „Użyj zapisanej maski”. Maska zostaje połączona z aktualnymi ustawieniami suwaków RGB, a obraz będzie filtrowany zarówno przez bieżące ustawienia, jak i zapisane parametry maski. Odznaczenie checkbox'a spowoduje wyłączenie maski.
+3. Zapisane maski można usuwać za pomocą przycisku „Usuń maskę”.
+4. Podczas zapisu obrazu oraz eksportu do Excela (Big Data): jeśli używana jest maska, jej nazwa zostaje automatycznie uwzględniona w nazwie pliku obrazu natomiast w pliku Excel pojawia się dodatkowa kolumna „MaskName”, zawierająca nazwę użytej maski (jeżeli maska nie była używana, w polu pojawia się wartość „None”) dodatkowo do Excela zapisywane są parametry użytej maski (zakresy RGB), co umożliwia pełne odtworzenie ustawień analizy.
